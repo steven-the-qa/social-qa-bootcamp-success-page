@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful - Social QA Bootcamp</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #e1e1e1;
+            background-color: #1a1a1a;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .success-card {
+            background: #2d2d2d;
+            border-radius: 12px;
+            padding: 2.5rem;
+            max-width: 600px;
+            width: 90%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background: #FAED0E;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+        }
+
+        .success-icon svg {
+            width: 40px;
+            height: 40px;
+            fill: #1a1a1a;
+        }
+
+        h1 {
+            color: #FAED0E;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .message {
+            color: #e1e1e1;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-box {
+            background: #222222;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .info-box h2 {
+            color: #FAED0E;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-box ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .info-box li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .info-box li::before {
+            content: "•";
+            color: #FAED0E;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .contact-support {
+            color: #e1e1e1;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+
+        .contact-support a {
+            color: #FAED0E;
+            text-decoration: none;
+        }
+
+        .contact-support a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-card">
+        <div class="success-icon">
+            <svg viewBox="0 0 24 24">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+            </svg>
+        </div>
+        
+        <h1>Payment Successful!</h1>
+        <p class="message">Thank you for enrolling in the Social QA Bootcamp!</p>
+
+        <div class="info-box">
+            <h2>What's Next?</h2>
+            <ul>
+                <li>Check your email for your course login details</li>
+                <li>Your access credentials will arrive within the next 5-10 minutes</li>
+                <li>If you purchased bonus materials, they'll be sent in a separate email</li>
+                <li>Bookmark the course login page for easy access</li>
+            </ul>
+        </div>
+
+        <div class="info-box">
+            <h2>Having Trouble?</h2>
+            <ul>
+                <li>Check your spam folder. Sometimes emails end up there.</li>
+            </ul>
+        </div>
+
+        <p class="contact-support">
+            Need help? <a href="mailto:steven@thesocialqa.com">Send me an email</a>
+        </p>
+    </div>
+</body>
+</html>
