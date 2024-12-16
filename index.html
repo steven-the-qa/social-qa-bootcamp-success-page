@@ -83,9 +83,10 @@
         }
 
         .info-box li {
-            margin-bottom: 0.5rem;
-            display: flex;
-            align-items: flex-start;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            line-height: 1.5;
+            color: #ffffff;
         }
 
         .info-box li::before {
@@ -93,6 +94,11 @@
             color: #FAED0E;
             font-weight: bold;
             margin-right: 0.5rem;
+        }
+
+        .info-box li a {
+            color: inherit;
+            text-decoration: none;
         }
 
         .contact-support {
@@ -109,6 +115,21 @@
         .contact-support a:hover {
             text-decoration: underline;
         }
+
+        .info-box ul ul {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .info-box ul ul li {
+            margin-bottom: 0.25rem;
+        }
+
+        .info-box ul ul li::before {
+            content: "◦";
+            font-size: 0.8em;
+        }
     </style>
 </head>
 <body>
@@ -119,16 +140,44 @@
             </svg>
         </div>
         
-        <h1>Payment Successful!</h1>
-        <p class="message">Thank you for enrolling in the Social QA Bootcamp!</p>
+        <h1>Congratulations!</h1>
+        <p class="message">You've successfully enrolled in Social QA Bootcamp!</p>
 
         <div class="info-box">
-            <h2>What's Next?</h2>
+            <h2>Your Next Steps</h2>
+            <p>Here are the important emails you should receive in the next few minutes:</p>
+            <br />
             <ul>
-                <li>Check your email for your course login details</li>
-                <li>Your access credentials will arrive within the next 5-10 minutes</li>
-                <li>If you purchased bonus materials, they'll be sent in a separate email</li>
-                <li>Bookmark the course login page for easy access</li>
+                <li>Payment notification email
+                    <ul>
+                        <li>Subject: <strong>"Steven Boutcher: Payment notification"</strong></li>
+                        <li><em>From: ThriveCart via receipts@thrivecart.email</em></li>
+                    </ul>
+                </li>
+                <li>Welcome email
+                    <ul>
+                        <li>Subject: <strong>"Welcome to Social QA Bootcamp!"</strong></li>
+                        <li><em>From: me via steven@thesocialqa.com</em></li>
+                    </ul>
+                </li>
+                <li>Course login email
+                    <ul>
+                        <li>Subject: <strong>"Verify your email to access your courses"</strong></li>
+                        <li><em>From: ThriveCart via accounts@thrivecart.net</em></li>
+                    </ul>
+                </li>
+                <li>Confirm your subscription email <em>(if you're new to my newsletter)</em>
+                    <ul>
+                        <li>Subject: <strong>"Confirm your Social QA newsletter subscription"</strong></li>
+                        <li><em>From: me via steven@thesocialqa.com</em></li>
+                    </ul>
+                </li>
+                <li>Bonuses email <em>(if you bought the add-on bonuses)</em>
+                    <ul>
+                        <li>Subject: <strong>"Your Bonuses for Social QA Bootcamp"</strong></li>
+                        <li><em>From: me via steven@thesocialqa.com</em></li>
+                    </ul>
+                </li>
             </ul>
         </div>
 
@@ -136,6 +185,7 @@
             <h2>Having Trouble?</h2>
             <ul>
                 <li>Check your spam folder. Sometimes emails end up there.</li>
+                <li>Look in other inbox tabs like "Promotions" or "Updates" if you use Gmail - new emails sometimes get filtered there automatically.</li>
             </ul>
         </div>
 
